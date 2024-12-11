@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Динамічно сформована сторінка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            margin: 20px;
+            color: #2c3e50;
+        }
+        .content {
+            text-align: center;
+            font-size: 18px;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        "use strict";
+
+
+        function weekDay(size, day, color) {
+            document.write(`<p style="font-size:${size}px; color:${color};">${day}</p>`);
+        }
+
+        weekDay(20, "Понеділок", "red");
+        weekDay(22, "Вівторок", "blue");
+        weekDay(24, "Середа", "green");
+        weekDay(26, "Четвер", "purple");
+        weekDay(28, "П'ятниця", "orange");
+        weekDay(30, "Субота", "pink");
+        weekDay(32, "Неділя", "brown");
+
+        document.write("</div>");
+
+        document.write("<div class='footer'>");
+        document.write("<p>&copy; 2024 Ваша компанія. Усі права захищені.</p>");
+        document.write("</div>");
+    </script>
+</body>
+</html>
